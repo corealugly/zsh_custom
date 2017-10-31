@@ -8,7 +8,7 @@ alias DBS="cd /root/work/docker/build/scripts/"
 alias DRM="docker run --entrypoint /bin/bash --rm -it"
 alias DR="docker run --entrypoint /bin/bash -it"
 alias CAD="cd /etc/pki/ca/" 
-alias DNONE="for idx in $(docker images | grep -iv "TAG" | grep -i "<none>" | awk '{print $3}'); do docker rmi ${idx}; done"
+alias DNONE='for idx in $(docker images | grep -iv "TAG" | grep -i "<none>" | awk '{print $3}'); do docker rmi ${idx}; done'
 
 alias JAVAHELP="
             echo 'jps -lvm';
@@ -23,4 +23,4 @@ alias MYSQLHELP="cat /etc/profile.d/files/mysqldump.txt"
 
 alias VIMHELP="cat /etc/profile.d/files/vim_split.txt"
 
-alias fix="printf \"\e[?2004l\""
+#alias fix='printf \"\e[?2004l\"'
